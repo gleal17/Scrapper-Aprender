@@ -11,7 +11,8 @@ Por enquanto, baixa todos os arquivos que foram postados no moodle pelos seus pr
 
 ### Requerimentos:    
 
-    pip install bs4
+    pip3 install bs4
+    pip3 install lxml
 
 
 ### Para usar:     

@@ -78,7 +78,7 @@ class Aprender():
     def acessa_disciplina(self,link):
         
         r = self.session.get(link,verify=False, allow_redirects=False)
-        soup = BeautifulSoup(r.text)
+        soup = BeautifulSoup(r.text,"lxml")
         try:
             titulo  = str(soup.title).split('Curso: ')[1].split('<')[0]
         except:
